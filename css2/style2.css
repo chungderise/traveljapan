@@ -1,0 +1,90 @@
+*{box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+body {font-family: "Helvetica Neuce" , Helvetica, Arial, sans-serif;font-weight: 300;color: 333;line-height: 1.254;margin: 0;padding: 0;background-color:#fff;}
+a {text-decoration: none;color: #3389d7;transition: all 0.5s;-moz-transition: all 0.5s;-webkit-transition: all 0.5s;}
+a:hover, a:visited {color: #265778;}
+h2{color:#111111;}
+h3{font-family: "Roboto Condensed";display: inline;margin-bottom: 0px;}
+.clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.container {margin: 10px 10px;background-color: #f1f1f1;}
+.header{height: auto;background-color: #fff;background-repeat: no-repeat;background-size: 100% 100%;color: #fff;}
+.header img{width:80px;height:auto;}
+/*--------Menu----------*/
+.menu {z-index: 999;position: relative;}
+.menu ul{list-style-type:none;	background-color:#fff;text-align:center;float: right;margin:0;padding:0;}
+.menu ul li{display:inline-table;color:#f1f1f1;	width:120px;height:40px;line-height:40px;position: relative;border-top:3px solid #fff;}
+.menu ul li:hover{background-color:#d6d6d6;	border-top:3px solid #c1282f;}
+.menu ul li a{text-decoration:none;color:#000;display:block;}
+.menu ul li a:hover{background:#d6d6d6;color:#333;}
+.menu ul li > .sub-menu{display:none;position:absolute;}
+.menu ul li:hover .sub-menu{display:block;}
+.menu ul li .sub-menu{padding:0;margin:0;}
+/*-------------Banner---------------*/
+.banner {width:100%;height: auto;}
+.sidebar {box-sizing:border-box;background-image:url('servicesub.jpg');background-size:100% 100%;background-repeat: no-repeat;width: 100%;padding: 0.3em 1em;margin: 0 auto;}
+.sidebar-sushi {box-sizing:border-box;background-image:url('background_sushi.jpg');background-size:100% 100%;background-repeat: no-repeat;width: 100%;padding: 0.3em 1em;margin: 0 auto;}
+.sidebar-shopping {box-sizing:border-box;background-image:url('background_shopping.jpg');background-size:100% 100%;background-repeat: no-repeat;width: 100%;padding: 0.3em 1em;margin: 0 auto;}
+.sidebar-onsen {box-sizing:border-box;background-image:url('background_onsen.jpg');background-size:100% 100%;background-repeat: no-repeat;width: 100%;padding: 0.3em 1em;margin: 0 auto;}
+.sidebar-omatsuri {box-sizing:border-box;background-image:url('background_omatsuri.jpg');background-size:100% 100%;background-repeat: no-repeat;width: 100%;padding: 0.3em 1em;margin: 0 auto;}
+.content {background: #f1f1f1;padding: 0.3em 1em;margin: 0 5em 1em 5em;position: relative;}
+.content img.img-center{display:block;margin-left:auto;margin-right:auto;margin-top:1em;margin-bottom: 1em;}
+.content .slogan{padding-top:1em;border-top:1px solid #c1282f;}
+ /*--row--*/
+.row {overflow: hidden;margin:50px auto;}
+.row .col {float:left;width: 40%;height:400px;margin: 20px 60px;text-align: justify;padding: 0 10px;background: #fff;text-align: center;}
+.row .col h2{color: #db2d39;}
+/*------.team-----------*/
+.team {width: 300px;height: 200px;margin:10px;float: left;}
+.team #menber1 {width:100px;height:100px;background-image: url('IMG_4619.jpg');background-repeat: none;background-size: 100% 100%;border-radius:100px;-webkit-border-radius:100px;-moz-border-radius:100px;float:left;margin:10px;}
+.team #menber2 {width:100px;height:100px;background-image: url('IMG_5188.jpg');background-repeat: none;background-size: 100% 100%;border-radius:100px;-webkit-border-radius:100px;-moz-border-radius:100px;float:left;margin:10px;}
+/*------.footer-------*/
+.footer{height:150px;background: #434547;color: #fff;padding: 20px 10px;}
+
+/*
+*  Responsive
+*/
+
+/* Tablet */
+@media screen and (min-width:600px) {
+	.main:before, .main:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.main {
+		max-width: 100%;
+	}
+	.content {
+	}
+	.sidebar-sushi img{width: 100px;height: 100px;}
+}/* End Tablet*/
+
+/* Widescreen */
+@media screen and (min-width:800px) {
+		.main:before, .main:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.main {
+		max-width: 100%;
+	}
+	.content {
+
+	}
+	.sidebar{
+	}
+	.sidebar-sushi img{width: 170px;height: 140px;}
+/* Desktop */
+@media sreen and (min-width: 1024px) {
+	.container {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+	.row .col {float:left;width: 350px;height:35%;margin: 10px auto;padding-right: 20px;text-align: justify;}
+	.sidebar-sushi img{width: 170px;height: 140px;}
+
+}/* End Destop*/
+
+
+
+
